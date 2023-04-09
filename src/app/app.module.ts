@@ -11,6 +11,8 @@ import { EmployeeSettingsComponent } from './employee-settings/employee-settings
 import { MatDialogModule } from '@angular/material/dialog'
 import {MatFormFieldModule} from '@angular/material/form-field'; 
 import {MatInput, MatInputModule} from '@angular/material/input'; 
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import {MatInput, MatInputModule} from '@angular/material/input';
     MatButtonModule,
     MatDialogModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
